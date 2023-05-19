@@ -1,5 +1,5 @@
 {
-    "name": "painless-php/package-boilerplate-devkit",
+    "name": "painless-php/package-boilerplate-core",
     "description": "Core functionality for creating packages using package-boilerplate",
     "type": "library",
     "require": {
