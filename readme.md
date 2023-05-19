@@ -13,7 +13,12 @@ This includes things like package generation commands.
 # TODO
 
 - generate php requirements
+    - update require php version in composer.json
+    - update require php extensions in composer.json
+
 - replace namespaces command
+    - update psr-4 namespace in composer.json based on package name
+
 - linters
 - editorconfig
 - semver checker
