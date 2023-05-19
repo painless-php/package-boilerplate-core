@@ -19,8 +19,6 @@ This includes things like package generation commands.
 - replace namespaces command
     - update psr-4 namespace in composer.json based on package name
 
-- linters
-- editorconfig
 - semver checker
 - generate @since tags
 - generate class + method overview on @api tags
