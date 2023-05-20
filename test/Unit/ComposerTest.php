@@ -7,11 +7,11 @@ use PainlessPHP\Package\Boilerplate\Core\Composer\Composer;
 
 class ComposerTest extends TestCase
 {
-    static $composerPath = ROOT_PATH . '/composer.json';
+    static $composerPath = PROJECT_ROOT . '/composer.json';
 
     public function testLocateJsonCanLocateComposerJsonInGivenDirectory()
     {
-        $this->assertEquals(self::$composerPath, Composer::locateJson(ROOT_PATH));
+        $this->assertEquals(self::$composerPath, Composer::locateJson(PROJECT_ROOT));
     }
 
     public function testLocateJsonCanLocateComposerJsonInGivenFile()

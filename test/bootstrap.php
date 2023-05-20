@@ -4,7 +4,7 @@
 require_once __DIR__ . '/config.php';
 
 // Define project root
-define('ROOT_PATH', dirname(__DIR__));
+define('PROJECT_ROOT', dirname(__DIR__));
 
 /* Load .env configuration for testing */
 $envDir = dirname(__DIR__);
