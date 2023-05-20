@@ -3,7 +3,7 @@
 namespace Test\Unit;
 
 use PHPUnit\Framework\TestCase;
-use PainlessPHP\Package\Boilerplate\Devkit\Composer\Composer;
+use PainlessPHP\Package\Boilerplate\Core\Composer\Composer;
 
 class ComposerTest extends TestCase
 {

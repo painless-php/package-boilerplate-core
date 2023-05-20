@@ -1,10 +1,10 @@
 <?php
 
-namespace PainlessPHP\Package\Boilerplate\Devkit\Version;
+namespace PainlessPHP\Package\Boilerplate\Core\Version;
 
 use Bartlett\CompatInfo\Application\Analyser\CompatibilityAnalyser;
-use PainlessPHP\Package\Boilerplate\Devkit\Helpers;
-use PainlessPHP\Package\Boilerplate\Devkit\Exception\VersionAnalysisException;
+use PainlessPHP\Package\Boilerplate\Core\Helpers;
+use PainlessPHP\Package\Boilerplate\Core\Exception\VersionAnalysisException;
 
 class VersionAnalysisReport
 {

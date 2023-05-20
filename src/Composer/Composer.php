@@ -1,9 +1,9 @@
 <?php
 
-namespace PainlessPHP\Package\Boilerplate\Devkit\Composer;
+namespace PainlessPHP\Package\Boilerplate\Core\Composer;
 
 use Exception;
-use PainlessPHP\Package\Boilerplate\Devkit\Helpers;
+use PainlessPHP\Package\Boilerplate\Core\Helpers;
 
 class Composer
 {

@@ -1,4 +1,4 @@
-# package boilerplate devkit
+# package boilerplate core
 
 Package boilerplate development functionality that should not be included directly in composer projects created using `package-boilerplate`.
 

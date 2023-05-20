@@ -12,7 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "PainlessPHP\\Package\\Boilerplate\\Devkit\\": "src/"
+            "PainlessPHP\\Package\\Boilerplate\\Core\\": "src/"
         }
     },
     "autoload-dev": {

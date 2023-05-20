@@ -1,6 +1,6 @@
 <?php
 
-namespace PainlessPHP\Package\Boilerplate\Devkit\Version;
+namespace PainlessPHP\Package\Boilerplate\Core\Version;
 
 class SemanticVersionNumber
 {

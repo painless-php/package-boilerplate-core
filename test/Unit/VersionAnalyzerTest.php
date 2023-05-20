@@ -2,9 +2,9 @@
 
 namespace Test\Unit;
 
-use PainlessPHP\Package\Boilerplate\Devkit\Version\SemanticVersionPrecision;
+use PainlessPHP\Package\Boilerplate\Core\Version\SemanticVersionPrecision;
 use PHPUnit\Framework\TestCase;
-use PainlessPHP\Package\Boilerplate\Devkit\Version\VersionAnalyzer;
+use PainlessPHP\Package\Boilerplate\Core\Version\VersionAnalyzer;
 
 class VersionAnalyzerTest extends TestCase
 {

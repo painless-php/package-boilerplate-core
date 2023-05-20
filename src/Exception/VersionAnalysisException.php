@@ -1,6 +1,6 @@
 <?php
 
-namespace PainlessPHP\Package\Boilerplate\Devkit\Exception;
+namespace PainlessPHP\Package\Boilerplate\Core\Exception;
 
 use Exception;
 
