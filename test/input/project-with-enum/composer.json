@@ -1,0 +1,11 @@
+{
+    "name": "test/project-with-enum",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "ProjectWithEnum\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}

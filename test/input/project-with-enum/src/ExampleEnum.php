@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Input\Enum;
+namespace ProjectWithEnum;
 
 enum ExampleEnum
 {

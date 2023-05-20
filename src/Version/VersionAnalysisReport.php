@@ -63,6 +63,6 @@ class VersionAnalysisReport
 
     public function getRequiredExtensions(array $ignoredExtensions = ['core', 'standard']) : array
     {
-        return array_diff($this->requiredExtensions, $ignoredExtensions);
+        return array_values(array_diff($this->requiredExtensions, $ignoredExtensions));
     }
 }

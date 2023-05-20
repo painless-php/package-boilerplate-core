@@ -5,30 +5,35 @@ namespace PainlessPHP\Package\Boilerplate\Core\Version;
 use PainlessPHP\Package\Boilerplate\Core\Compatinfo\CompatinfoOutputType;
 use PainlessPHP\Package\Boilerplate\Core\Compatinfo\RunCompatinfo;
 use PainlessPHP\Package\Boilerplate\Core\Exception\VersionAnalysisException;
+use PainlessPHP\Package\Boilerplate\Core\Composer\Composer;
 
 class VersionAnalyzer
 {
     public function __construct(
         private string $binaryPath,
-        private string $projectRoot
     )
     {
+    }
+
+    public static function local() : self
+    {
+        return new self(dirname(Composer::locate()) . '/vendor/bin/phpcompatinfo');
     }
 
     /**
      * @throws VersionAnalysisException
      *
      */
-    public function analyze(string|array $exclude = ['vendor', 'test']) : VersionAnalysisReport
+    public function analyze(string $targetPath, string|array $exclude = ['vendor', 'test']) : VersionAnalysisReport
     {
-        $output = (new RunCompatinfo)(
+        $result = (new RunCompatinfo)(
             binaryPath: $this->binaryPath,
-            directory: $this->projectRoot,
+            targetPath: $targetPath,
             exclude: $exclude,
             output: CompatinfoOutputType::Json
         );
 
-        $words = preg_split('/\s+/', $output);
+        $words = preg_split('/\s+/', $result->getOutput());
         $outputFile = null;
 
         foreach($words as $word) {
@@ -38,8 +43,9 @@ class VersionAnalyzer
         }
 
         if(empty($outputFile)) {
-            $msg = "Could not find the version analysis report file from the output: ";
-            $msg .= PHP_EOL . $output;
+            $msg = 'Could not find the version analysis report file';
+            $msg .= PHP_EOL . "Command: '{$result->getCommand()}'";
+            $msg .= PHP_EOL . "Output: '{$result->getOutput()}'";
             throw new VersionAnalysisException($msg);
         }
 

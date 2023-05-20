@@ -48,7 +48,7 @@ class Helpers
         return self::arrayGetNested($haystack, $needle, $nestingIndicator);
     }
 
-    public static function arraySetNested(array $data, array $newData, string $needle, string|null $nestingIndicator = null)
+    public static function arraySetNested(array $data, mixed $newData, string $needle, string|null $nestingIndicator = null)
     {
         $orignalNewData = $newData;
         $originalNeedle = $needle;

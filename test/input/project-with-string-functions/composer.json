@@ -1,0 +1,11 @@
+{
+    "name": "test/project-with-string-functions",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "ProjectWithStringFunctions\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
