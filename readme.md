@@ -1,8 +1,16 @@
-# package boilerplate core
+# package-boilerplate-core
 
-Package boilerplate development functionality that should not be included directly in composer projects created using `package-boilerplate`.
+Functionality that should not be included directly in project setup of [package-boilerplate]().
 
 This includes things like package generation commands.
+
+## Installation
+
+This package is meant to be used as a dev requirement and is included in [package-boilerplate]() by default.
+
+```
+composer require --dev painless-php/package-boilerplate-core
+```
 
 ## Usage
 
