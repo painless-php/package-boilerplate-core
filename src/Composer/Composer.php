@@ -69,4 +69,9 @@ class Composer
 
         file_put_contents($filepath, json_encode($this->data, $jsonWriteFlags));
     }
+
+    public function getFilepath() : string
+    {
+        return $this->filepath;
+    }
 }
