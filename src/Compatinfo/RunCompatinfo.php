@@ -13,11 +13,11 @@ class RunCompatinfo
     {
         $command = "$binaryPath analyser:run $directory --output=$output->value";
 
-        $exludeOptions = match(gettype($exclude)) {
+        $excludeOptions = match(gettype($exclude)) {
             'string' => "--exclude=$exclude",
             'array' => implode(' ' , array_map(fn($excluded) => "--exclude=$excluded", $exclude))
         };
 
-        return shell_exec("$command $exludeOptions");
+        return shell_exec("$command $excludeOptions");
     }
 }
